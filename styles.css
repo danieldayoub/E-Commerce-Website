@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     max-width: 100vw;
     overflow-x: hidden;
@@ -13,6 +17,14 @@ body{
 
 .purple{
     color: #7342d6;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 img{
@@ -144,6 +156,16 @@ button:active{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.row__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-cursor{
+    cursor: not-allowed;
+}
 /* 
 
 HIGHLIGHTS 
@@ -224,6 +246,7 @@ FEATURES
 
 .books{
 display: flex;
+flex-wrap: wrap;
 }
 
 .book {
@@ -266,4 +289,51 @@ display: flex;
     text-decoration: line-through;
     padding-right: 6px;
     color: #bfbfbf;
+}
+
+/* 
+
+RECENT
+
+*/
+
+/* 
+
+EXPLORE
+
+*/
+
+#explore{
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/* 
+
+FOOTER
+
+*/
+
+footer{
+    background-color: #242424;
+}
+
+.footer__logo{
+    display: flex;
+}
+.footer__logo--img{
+width: 160px;
+filter: grayscale(1) invert(1);
+}
+
+.footer__link, 
+.footer__copyright {
+    color: #fff;
+}
+
+.footer__list{
+    margin: 20px 0 24px 0;
+}
+
+.footer__link{
+    padding: 0 8px;
 }
